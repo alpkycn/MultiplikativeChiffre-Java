@@ -5,11 +5,11 @@ import java.util.stream.IntStream;
 
 public class Testprogramm1 {
 	
-    public static final int ALPHABET_SIZE = 26;  // Größe des Alphabets (Standard: 26 Buchstaben im Englischen)
+    public static final int ALPHABET_SIZE = 26;  // Groesse des Alphabets (Standard: 26 Buchstaben im Englischen)
     private int key ;
     private String operation ;
 
-    // Methode zur Verschlüsselung oder Entschlüsselung von Text
+    // Methode zur Verschluesselung oder Entschluesselung von Text
     public void chiffer() {
     	
     	System.out.println("Chiffrier- und Dechiffiertabelle");
@@ -20,32 +20,32 @@ public class Testprogramm1 {
 
         Dateioperationen dateioperationen = new Dateioperationen(); // Instanz der Klasse Dateioperationen, um Dateien zu lesen/schreiben
 
-        operation = UserInterface.in.askQuestion("Geben Sie '1' (zum Verschlüsseln) oder '2' (zum Entschlüsseln) ein: ");
+        operation = UserInterface.in.askQuestion("Geben Sie '1' (zum Verschluesseln) oder '2' (zum Entschluesseln) ein: ");
 
         if (operation.equals("1")) {
-            key = UserInterface.in.requestInt("Geben Sie Schlüssel ein (Datentyp int): ");
+            key = UserInterface.in.requestInt("Geben Sie Schluessel ein (Datentyp int): ");
             
             if (key != 3 && key != 5 && key != 7 && key != 9 && key != 11 &&
                     key != 15 && key != 17 && key != 19 && key != 21 && key != 23 && key != 25)
             {
-            	System.out.println("Sie können nur folgende Schlüssel eingeben:{3,5,7,9,11,15,17,19,21,23,25}");
+            	System.out.println("Sie koennen nur folgende Schluessel eingeben:{3,5,7,9,11,15,17,19,21,23,25}");
             	return ;
             }
             dateioperationen.verschltText(key);
             
             
         } else if (operation.equals("2")) {
-            key = UserInterface.in.requestInt("Geben Sie Schlüssel ein (Datentyp int): ");
+            key = UserInterface.in.requestInt("Geben Sie Schluessel ein (Datentyp int): ");
             
             if (key != 3 && key != 5 && key != 7 && key != 9 && key != 11 &&
                     key != 15 && key != 17 && key != 19 && key != 21 && key != 23 && key != 25)
             {
-            	System.out.println("Sie können nur folgende Schlüssel eingeben:{3,5,7,9,11,15,17,19,21,23,25}");
+            	System.out.println("Sie koennen nur folgende Schluessel eingeben:{3,5,7,9,11,15,17,19,21,23,25}");
             	return ;
             }
             dateioperationen.entschltText(key);
         } else {
-            System.out.println("Ungültige Eingabe. Bitte geben Sie entweder 'encrypt' oder 'decrypt'.");
+            System.out.println("Ungueltige Eingabe. Bitte geben Sie entweder 'encrypt' oder 'decrypt'.");
         }
     }
   

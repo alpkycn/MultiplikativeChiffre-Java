@@ -1,6 +1,6 @@
 package de.oop2024.util;
 
-public class Verschlüsseln 
+public class Verschluesseln 
 {
 	private int charNum ;
 	private int verschlusselteCharNum ;

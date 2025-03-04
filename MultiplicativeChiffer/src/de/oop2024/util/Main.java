@@ -7,7 +7,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 			
-		knownkey = UserInterface.in.askQuestion("Ist der Schlüssel bekannt ?(Wenn ja geben Sie 1 ein sonst 2)");
+		knownkey = UserInterface.in.askQuestion("Ist der Schluessel bekannt ?(Wenn ja geben Sie 1 ein sonst 2)");
 		
 		if(knownkey.equals("1"))
 		{

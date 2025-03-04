@@ -23,14 +23,14 @@ public class Dateioperationen
         inputFilename = "Gedicht.txt";
         outputFilename = "Geheim.txt";
         
-        Verschlüsseln ver = new Verschlüsseln();
+        Verschluesseln ver = new Verschluesseln();
         
         try 
         {
             plaintext = readFile(inputFilename);
             chiffertext = ver.verschl(plaintext, key);
             writeFile(outputFilename, chiffertext);
-            System.out.println("Verschlüsseln ist erfolgreich. Geheimtext ist in " + outputFilename);
+            System.out.println("Verschluessseln ist erfolgreich. Geheimtext ist in " + outputFilename);
         } catch (IOException e) 
         {
             System.out.println("Error reading/writing file: " + e.getMessage());
@@ -44,14 +44,14 @@ public class Dateioperationen
         inputFilename = "Geheim.txt";
         outputFilename = "Klartext.txt";
         
-    	Entschlüsseln ent = new Entschlüsseln();
+    	Entschluesseln ent = new Entschluesseln();
 
         try 
         {
             chiffertext = readFile(inputFilename);
             plaintext = ent.entschl(chiffertext, key) ;
             writeFile(outputFilename, plaintext);
-            System.out.println("Entschlüsseln ist erfolgreich. Klartext ist in " + outputFilename);
+            System.out.println("Entschluessseln ist erfolgreich. Klartext ist in " + outputFilename);
         } catch (IOException e) 
         {
             System.out.println("Error reading/writing file: " + e.getMessage());

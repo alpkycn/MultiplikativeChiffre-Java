@@ -1,6 +1,6 @@
 package de.oop2024.util;
 
-public class Entschlüsseln 
+public class Entschluesseln 
 {
 	private int modInverse ;
 	private int charNum ;

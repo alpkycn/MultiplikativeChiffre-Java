@@ -8,7 +8,7 @@ public class Testprogramm2
 {
 	Dateioperationen dateioperationen = new Dateioperationen();
 	static Cryptanalysis analysis = new Cryptanalysis();
-	Verschlüsseln verschlusseln = new Verschlüsseln();
+	Verschluesseln verschlusseln = new Verschluesseln();
 	
 	private int key ;
 	public String plaintext ;
@@ -30,7 +30,7 @@ public class Testprogramm2
 
 	        Dateioperationen dateioperationen = new Dateioperationen(); 
 
-	        operation = UserInterface.in.askQuestion("Geben Sie '1' (zum Verschlüsseln) oder '2' (zum Entschlüsseln) ein: ");
+	        operation = UserInterface.in.askQuestion("Geben Sie '1' (zum Verschluesseln) oder '2' (zum Entschluesseln) ein: ");
 
 	        if (operation.equals("1")) {
 	            key = random.nextInt(27);
@@ -80,7 +80,7 @@ public class Testprogramm2
 	        
 	
 	        if (decryptedAttempt.contains("Schnee")) {
-	        	System.out.println("Schlüssel: " + key);
+	        	System.out.println("Schluessel: " + key);
 	        	 System.out.println("dechiffrierter Text: " + decryptedAttempt);
 	            decryptedText = decryptedAttempt;
 	            break;
